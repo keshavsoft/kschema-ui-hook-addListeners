@@ -1,14 +1,14 @@
+import { createRequire } from "module";
 import getLatestVersion from "./bin/core/getLatestVersion.js";
-import v3AddHtmlId from "./bin/v3/addHtmlId/index.js";
+
+const require = createRequire(import.meta.url);
 
 const load = (options) => {
     const v = getLatestVersion();
 
-    if (v === "v3") {
-        return v3AddHtmlId(options);
-    }
+    const mod = require(`./bin/${v}/addHtmlId/index.js`);
 
-    throw new Error(`Unsupported version: ${v}`);
+    return mod.default(options);
 };
 
 export default load;
