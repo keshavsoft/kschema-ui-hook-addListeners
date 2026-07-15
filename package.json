@@ -1,6 +1,6 @@
 {
   "name": "kschema-ui-hook-addListeners",
-  "version": "1.2.1",
+  "version": "1.3.2",
   "description": "CLI to build for endpointsjs, the table name, DataPath and configpath",
   "keywords": [
     "cli",
@@ -10,7 +10,7 @@
     "project-generator"
   ],
   "dependencies": {
-    "ui-fix-addListeners-js": "^1.2.1"
+    "ui-fix-add-listeners-js": "^1.3.2"
   },
   "type": "module",
   "exports": {
