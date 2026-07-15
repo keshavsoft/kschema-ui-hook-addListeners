@@ -4,7 +4,7 @@ import index from "../../../index.js";
 const startFunc = async () => {
     await index({
         showLog: true,
-        endPointsJsPath: path.join(process.cwd(), "addListeners.js"),
+        toPath: process.cwd(),
         inActionName: "Html1",
         inFolderName: "Fold1"
     });

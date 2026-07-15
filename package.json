@@ -1,6 +1,6 @@
 {
   "name": "kschema-ui-hook-add-listeners",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "CLI to build for endpointsjs, the table name, DataPath and configpath",
   "keywords": [
     "cli",
