@@ -1,7 +1,9 @@
 import uiFix from "ui-fix-add-listeners-js";
 
-const startFunc = async ({ toPath, endpoint, inShowLog = true }) => {
-    return await uiFix({
+const startFunc = ({ toPath, endpoint, inShowLog = true }) => {
+    const localToPath = toPath;
+
+    return uiFix({
         showLog: true,
         endPointsJsPath: `${localToPath}/addListeners.js`,
         inActionName: endpoint,
