@@ -1,0 +1,36 @@
+{
+  "name": "kschema-ui-hook-addListeners",
+  "version": "1.2.1",
+  "description": "CLI to build for endpointsjs, the table name, DataPath and configpath",
+  "keywords": [
+    "cli",
+    "scaffold",
+    "templates",
+    "node",
+    "project-generator"
+  ],
+  "dependencies": {
+    "ui-fix-addListeners-js": "^1.2.1"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "bin": {
+    "kschema-ui-hook-addListeners": "./bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "homepage": "https://cli.keshavsoft.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keshavsoft/kschema-ui-hook-addListeners"
+  },
+  "bugs": {
+    "url": "https://github.com/keshavsoft/kschema-ui-hook-addListeners/issues"
+  }
+}
