@@ -1,8 +1,7 @@
-import path from "path";
 import index from "../../../index.js";
 
-const startFunc = async () => {
-    await index({
+const startFunc = () => {
+    index({
         showLog: true,
         toPath: process.cwd(),
         inActionName: "Html1",
@@ -10,4 +9,4 @@ const startFunc = async () => {
     });
 };
 
-startFunc().then();
+startFunc();

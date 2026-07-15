@@ -1,11 +1,14 @@
 import getLatestVersion from "./bin/core/getLatestVersion.js";
+import v3AddHtmlId from "./bin/v3/addHtmlId/index.js";
 
-const load = async () => {
+const load = (options) => {
     const v = getLatestVersion();
 
-    const module = await import(`./bin/${v}/addHtmlId/index.js`);
+    if (v === "v3") {
+        return v3AddHtmlId(options);
+    }
 
-    return await module.default;
+    throw new Error(`Unsupported version: ${v}`);
 };
 
 export default load;
