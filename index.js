@@ -11,4 +11,13 @@ const load = (options) => {
     return mod.default(options);
 };
 
+const showAll = (options) => {
+    const v = getLatestVersion();
+
+    const mod = require(`./bin/${v}/addShowAll/index.js`);
+
+    return mod.default(options);
+};
+
+export { showAll };
 export default load;
