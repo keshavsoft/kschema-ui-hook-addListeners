@@ -4,7 +4,7 @@ import index from "../../../index.js";
 const startFunc = () => {
     index({
         showLog: true,
-        toPath: path.join(process.cwd(), "test", "v2", "addHtmlId"),
+        toPath: path.join(process.cwd(), "test", "v3", "addHtmlId"),
         inActionName: "Html1",
         folderName: "Fold1"
     });
