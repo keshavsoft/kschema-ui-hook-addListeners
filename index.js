@@ -29,5 +29,13 @@ verticals.saveOnly = (options) => {
     return mod.default(options);
 };
 
+verticals.stackedSaveOnly = (options) => {
+    const v = getLatestVersion();
+
+    const mod = require(`./bin/${v}/verticals/stackedSaveOnly/index.js`);
+
+    return mod.default(options);
+};
+
 export { showAll, verticals };
 export default load;
