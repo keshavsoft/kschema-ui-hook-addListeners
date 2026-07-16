@@ -19,5 +19,15 @@ const showAll = (options) => {
     return mod.default(options);
 };
 
-export { showAll };
+const verticals = {};
+
+verticals.saveOnly = (options) => {
+    const v = getLatestVersion();
+
+    const mod = require(`./bin/${v}/verticals/saveOnly/index.js`);
+
+    return mod.default(options);
+};
+
+export { showAll, verticals };
 export default load;
