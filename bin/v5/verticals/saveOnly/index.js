@@ -1,6 +1,6 @@
 import { locateSource } from "./Helpers/steps/locateSource.js";
 import { locateDestination } from "./Helpers/steps/locateDestination.js";
-import { createFolder } from "../core/createFolder.js";
+import { createFolder } from "../../core/createFolder.js";
 
 import updateAddListeners from "./Helpers/updateAddListeners.js";
 import updateStartJs from "./Helpers/updateStartJs.js";
